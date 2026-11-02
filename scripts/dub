@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+runtime_dir="${ALT_TRACK_DUBBING_HOME:-$HOME/.local/share/alt-track-dubbing}"
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ ! -x "$runtime_dir/.venv/bin/python" ]; then
+  printf '%s\n' "Run: python3 $script_dir/bootstrap.py"
+  exit 1
+fi
+export HF_HOME="$runtime_dir/models"
+export HF_HUB_DISABLE_XET=1
+export TOKENIZERS_PARALLELISM=false
+export PYTHONUNBUFFERED=1
+exec "$runtime_dir/.venv/bin/python" "$script_dir/dub.py" "$@"

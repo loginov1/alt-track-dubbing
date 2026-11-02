@@ -1,0 +1,6 @@
+interface:
+  display_name: "Video dubbing"
+  short_description: "Alternate audio tracks via Chirp 3 HD or your own recording"
+  default_prompt: "Use $alt-track-dubbing to prepare synchronized audio tracks for this video in the requested languages, keep the original music, and prepare a reading script for any language I will record myself."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,12 @@
+numpy>=2.2,<3
+scipy>=1.15,<2
+soundfile>=0.13,<1
+requests>=2.32,<3
+torch>=2.6,<3
+torchaudio>=2.6,<3
+transformers>=4.48,<6
+silero-vad>=6,<7
+onnxruntime>=1.19,<2
+resemblyzer>=0.1.4,<0.2
+scikit-learn>=1.6,<2
+huggingface-hub>=0.28,<2

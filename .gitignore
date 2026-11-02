@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+
+# Media and job output never belong in this repository.
+Dubbing/
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.aac
+*.flac
